@@ -17,13 +17,14 @@ const client = create({
   host: 'ipfs.infura.io',
   port: 5001,
   protocol: 'https',
+  apiPath: '/api/v0',
   headers: {
-      authorization: auth,
+    authorization: auth,
   },
 });
 
 export default function CreateItem() {
-  const [fileUrl, setFileUrl] = useState('');
+  const [fileUrl, updateFileUrl] = useState(null);
   const [formInput, setFormInput] = useState({ price: '', name: '', description: '' });
   const router = useRouter();
 
@@ -37,9 +38,9 @@ export default function CreateItem() {
       const added = await client.add(file, {
         progress: (prog) => console.log(`received: ${prog}`),
       });
-      const url = `https://ipfs.infura.io/ipfs/${added.path}`;
-      setFileUrl(url);
-      console.log(url);
+      const v1CID = added.cid.toV1();
+      const url = `https://cloudflare-ipfs.com/ipfs/${v1CID}`;
+      updateFileUrl(url);
     } catch (error) {
       console.log('Error uploading file:', error);
     }
@@ -57,7 +58,8 @@ export default function CreateItem() {
 
     try {
       const added = await client.add(data);
-      const url = `https://ipfs.infura.io/ipfs/${added.path}`;
+      const v1CID = added.cid.toV1();
+      const url = `https://cloudflare-ipfs.com/ipfs/${v1CID}`;
       createSale(url);
     } catch (error) {
       console.log('Error uploading file: ', error);
@@ -114,8 +116,7 @@ export default function CreateItem() {
           onChange={handleInputChange}
         />
         <input type="file" name="Asset" className="my-4" onChange={onChange} />
-        {fileUrl && (<img className="rounded mt-4" width="350" src={fileUrl} alt="Preview" />)}
-        <p>{fileUrl}</p>
+        {fileUrl && <img className="rounded mt-4" width="350" src={fileUrl} alt="Preview" />}
         <button
           onClick={createItem}
           className="font-bold mt-4 bg-pink-500 text-white rounded p-4 shadow-lg"
