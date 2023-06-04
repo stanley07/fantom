@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.image-container {
+    display: flex;
+  }
+  
+  .image {
+    width: 200px; /* Adjust the width to your desired size */
+    height: 200px; /* Adjust the height to your desired size */
+  }
