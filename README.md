@@ -1,7 +1,7 @@
-# NFT Marketplace on Polygon
+# NFT Marketplace on Mantle
 
 ## Description
-This is an NFT marketplace deployed on the Polygon network. The marketplace allows users to buy, sell, and trade non-fungible tokens (NFTs) using the Polygon blockchain.
+This is an NFT marketplace deployed on the Mantle network. The marketplace allows users to buy, sell, and trade non-fungible tokens (NFTs) using the Mantle blockchain.
 
 ## Features
 - Browse and search for available NFTs.
@@ -13,20 +13,20 @@ This is an NFT marketplace deployed on the Polygon network. The marketplace allo
 
 ## Requirements
 - A web browser with MetaMask or another Ethereum wallet extension installed.
-- An account on the Polygon network with funds to purchase NFTs and pay for transaction fees.
+- An account on the Mantle network with funds to purchase NFTs and pay for transaction fees.
 
 ## Installation
-1. Clone the repository: `git clone https://github.com/stanley07/nextjs-blog.git`
+1. Clone the repository: `git clone https://github.com/stanley07/mantle.git`
 2. Navigate to the project directory: `cd your-repository`
 3. Install the dependencies: `npm install`
 
 ## Configuration
 1. Create a new file named `.env`.
 2. Define the following environment variables in the `.env` file:
-   - `REACT_APP_NETWORK_URL`: The URL of the Polygon network RPC endpoint.
-   - `REACT_APP_CONTRACT_ADDRESS`: The address of the NFT contract deployed on Polygon.
+   - `REACT_APP_NETWORK_URL`: The URL of the Mantle network RPC endpoint.
+   - `REACT_APP_CONTRACT_ADDRESS`: The address of the NFT contract deployed on Mantle.
    - `REACT_APP_CONTRACT_ABI`: The ABI (Application Binary Interface) of the NFT contract.
-   - `REACT_APP_MARKETPLACE_ADDRESS`: The address of the marketplace contract deployed on Polygon.
+   - `REACT_APP_MARKETPLACE_ADDRESS`: The address of the marketplace contract deployed on Mantle.
    - `REACT_APP_MARKETPLACE_ABI`: The ABI of the marketplace contract.
 
 ## Usage
@@ -45,7 +45,7 @@ If you'd like to contribute to this project, please follow these steps:
 
 Technologies Used
 
-Polygon: The marketplace is deployed on the Polygon network, leveraging its low transaction fees and fast confirmation times.
+Mantle: The marketplace is deployed on the Mantle network, leveraging its low transaction fees and fast confirmation times.
 
 React: The frontend is built using React.js, providing a responsive and user-friendly interface.
 
@@ -53,7 +53,7 @@ Hardhat: The smart contracts are developed and tested using the Hardhat framewor
 
 IPFS: NFT metadata and images are stored on IPFS, ensuring decentralized and reliable access.
 
-Web3.js: The marketplace interacts with the Polygon blockchain using the Web3.js library.
+Web3.js: The marketplace interacts with the Mantle blockchain using the Web3.js library.
 
 Solidity: Smart contracts are written in Solidity, the programming language for Ethereum-based networks.
 
@@ -63,4 +63,4 @@ This project is licensed under the [MIT License](LICENSE).
 ## Acknowledgements
 - [OpenZeppelin](https://openzeppelin.com/): Solidity library for secure smart contract development.
 - [React](https://reactjs.org/): JavaScript library for building user interfaces.
-- [Polygon](https://polygon.technology/): Ethereum scaling solution.
+- [Mantle](https://www.mantle.xyz/developers): Ethereum scaling solution.
