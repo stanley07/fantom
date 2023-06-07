@@ -111,7 +111,7 @@ export default function CreateItem() {
         <input
           id="assetPrice"
           name="price"
-          placeholder="Asset Price in MATIC"
+          placeholder="Asset Price in MNT"
           className="mt-2 border rounded p-4"
           onChange={handleInputChange}
         />
