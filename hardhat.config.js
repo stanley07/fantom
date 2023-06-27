@@ -6,8 +6,8 @@ const PRIVATE_KEY = process.env.PRIVATE_KEY;
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
   networks: {
-    mantle_testnet: {
-      url: "https://rpc.testnet.mantle.xyz",
+    fantom: {
+      url: "https://fantom-mainnet.public.blastapi.io/",
       accounts: [PRIVATE_KEY ?? "undefined"],
     }
 
