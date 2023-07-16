@@ -1,4 +1,4 @@
-develop# NFT Marketplace on Mantle
+develop# NFT Marketplace on Fantom
 
 ## Description
 This is an NFT marketplace deployed on the Fantom mainnet network. The marketplace allows users to buy, sell, and trade non-fungible tokens (NFTs) using the Fantom blockchain.
