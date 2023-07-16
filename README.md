@@ -24,9 +24,9 @@ This is an NFT marketplace deployed on the Fantom mainnet network. The marketpla
 1. Create a new file named `.env`.
 2. Define the following environment variables in the `.env` file:
    - `REACT_APP_NETWORK_URL`: The URL of the Fantom network RPC endpoint.
-   - `REACT_APP_CONTRACT_ADDRESS`: The address of the NFT contract deployed on Mantle.
+   - `REACT_APP_CONTRACT_ADDRESS`: The address of the NFT contract deployed on Fantom
    - `REACT_APP_CONTRACT_ABI`: The ABI (Application Binary Interface) of the NFT contract.
-   - `REACT_APP_MARKETPLACE_ADDRESS`: The address of the marketplace contract deployed on Mantle.
+   - `REACT_APP_MARKETPLACE_ADDRESS`: The address of the marketplace contract deployed on Fantom.
    - `REACT_APP_MARKETPLACE_ABI`: The ABI of the marketplace contract.
 
 ## Usage
